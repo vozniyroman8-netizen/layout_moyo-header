@@ -16,21 +16,21 @@ body {
   height: 60px;
 }
 
-.nav {
+.nav__list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.img {
+.header__logo {
   margin-top: 5px;
   margin-left: 0;
   width: 40px;
   height: 40px;
 }
 
-.box {
+.nav__link {
   position: relative;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -41,19 +41,15 @@ body {
   display: flex;
   align-items: center;
   color: black;
+  text-decoration: none;
 }
 
-.box:hover {
+.nav__link:hover {
   color: var(--blue-color);
 }
 
 .is-active {
   color: var(--blue-color);
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 
 .is-active::after {
@@ -67,6 +63,6 @@ a {
   background-color: var(--blue-color);
 }
 
-.nav li:not(:last-child) {
+.nav__list li:not(:last-child) {
   margin-right: 20px;
 }
